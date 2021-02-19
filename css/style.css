@@ -141,15 +141,35 @@ section.hero{
 /* SOFTWARES SECT. */
 section.softwares{
     padding: 50px;
+    background-color: #f4f9fd;
 }
 /* Heading Soft. Sect. */
 .softwares .heading-soft-sect{
-    width: 950px;
-    margin: 0 auto;
+    padding: 0 430px;
 }
 .softwares .heading-soft-sect img{
     height: 210px;
 }
 .softwares .heading-soft-sect h2{
     font-size: 32px;
+}
+/* Free Hubspot */
+.free-hubspot{
+    height: 375px; /* fake content */
+    padding: 80px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,.2);
+}
+.free-hubspot .left-free-hubspot,
+.free-hubspot .right-free-hubspot{
+    height: 210px; /* fake content */
+}
+.free-hubspot .left-free-hubspot{
+    background-color: aqua; /* fake content */
+    width: 30%;
+}
+.free-hubspot .right-free-hubspot{
+    background-color:palevioletred; /* fake content */
+    width: 70%;
 }
