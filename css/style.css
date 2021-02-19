@@ -85,13 +85,10 @@ body{
 .right-top-header li:first-child{
     color: #00a4bd;
 }
-
-.bottom-header{
-    background-color: aqua; /*fake content*/
-}
-.left-bottom-header,
+/* Bottom rigth */
 .right-bottom-header{
-    height: 100%; /* fake content */
-    width: 300px; /* fake content */
-    background-color: rgba(200,200,0,.3); /* fake content */
+    font-weight: 600;
+}
+.right-bottom-header li span{
+    padding-left: 10px;
 }
