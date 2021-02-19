@@ -10,7 +10,9 @@ body{
     font-weight: 500;
     color: #33475b;
 }
-
+p{
+    line-height: 30px;
+}
 /* UTILITIES */
 /* Layout */
 .container{
@@ -34,6 +36,9 @@ body{
 /* Text */
 .small-text{
     font-size: 12px;
+}
+.align-center{
+    text-align: center;
 }
 /* List */
 .menu-inline li{
@@ -80,32 +85,33 @@ header.main-header{
     background-color: #f4f9fd;
     border-bottom: 1px solid black;
 }
-/* Top left */
-.left-top-header li:first-child{
+/* Top Left */
+.top-header .left-top-header li:first-child{
     padding-right: 20px;
     line-height: 1.5;
     border-right: 2px solid #899397;
 }
-/* Top right */
-.right-top-header li{
+/* Top Right */
+.top-header .right-top-header li{
     line-height: 1;
 }
-.right-top-header li:first-child{
+.top-header .right-top-header li:first-child{
     color: #00a4bd;
 }
-.left-bottom-header img{
+/* Bottom left */
+.bottom-header .left-bottom-header img{
     vertical-align: middle;
 }
-/* Bottom rigth */
-.right-bottom-header{
+/* Bottom Rigth */
+.bottom-header .right-bottom-header{
     font-weight: 600;
 }
-.right-bottom-header li span{
+.bottom-header .right-bottom-header li span{
     padding-left: 10px;
 }
 
 /* MAIN */
-/* Hero */
+/* HERO */
 section.hero{
     position: relative;
     height: 685px;
@@ -114,9 +120,6 @@ section.hero{
     background-repeat: no-repeat;
     background-position: right 40%;
     background-color:#fff5ee;
-}
-.hero .container{
-    padding-right: 650px;
 }
 .hero .band{
     position: absolute;
@@ -127,10 +130,26 @@ section.hero{
     border-top: 3px solid #33475b;
     border-bottom: 3px solid #33475b;
 }
+.hero .container{
+    padding-right: 650px;
+}
 .hero h1{
     font-size: 48px;
     font-weight: 800;
 }
-.hero p{
-    line-height: 30px;
+
+/* SOFTWARES SECT. */
+section.softwares{
+    padding: 50px;
+}
+/* Heading Soft. Sect. */
+.softwares .heading-soft-sect{
+    width: 950px;
+    margin: 0 auto;
+}
+.softwares .heading-soft-sect img{
+    height: 210px;
+}
+.softwares .heading-soft-sect h2{
+    font-size: 32px;
 }
