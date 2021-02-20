@@ -33,6 +33,9 @@ p{
 .mb-30{
     margin-bottom: 30px;
 }
+.mb-60{
+    margin-bottom: 60px;
+}
 /* Text */
 .small-text{
     font-size: 12px;
@@ -145,7 +148,6 @@ section.softwares{
 }
 /* Heading Soft. Sect. */
 .softwares .heading-soft-sect{
-    margin-bottom: 60px;
     padding: 0 430px;
 }
 .softwares .heading-soft-sect img{
@@ -154,6 +156,7 @@ section.softwares{
 .softwares .heading-soft-sect h2{
     font-size: 32px;
 }
+
 /* Free Hubspot */
 .free-hubspot{
     padding: 80px;
@@ -195,4 +198,20 @@ section.softwares{
 .free-hubspot .right-free-hubspot li > i{
     padding-right: 10px;
     color: #ff7a59;
+}
+
+/* Products */
+.products-box{
+    height: 725px; /* fake content */
+    background-color: aqua; /* fake content */
+}
+.products-box .product{
+    height: 100%; /* fake content */
+    width: 30%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,.2);
+}
+.products-box .product:nth-child(2){
+    margin: 0 5%;
 }
