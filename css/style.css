@@ -86,12 +86,8 @@ li > i{
 }
 
 /* HEADER */
-header.main-header{
-    height: 170px;
-}
 .main-header .top-header,
 .main-header .bottom-header{
-    height: 50%;
     line-height: 85px;
 }
 .main-header .top-header{
@@ -225,7 +221,6 @@ section.softwares{
 
 /* COMMUNITY */
 section.community{
-    /* height: 765px; fake content */
     padding: 60px;
     color:white;
     background-image: linear-gradient(to right,#00a8ba,#00b9aa);
@@ -272,4 +267,37 @@ section.community{
 }
 .community .numbers-box.bottom-numbers-box .numbers:last-child img{
     height: 25px;
+}
+
+/* CUSTOMERS */
+section.customers{
+    padding: 60px;
+}
+section.customers .container{
+    background-color: aqua; /* fake content */
+}
+/* Top */
+.customers .top-customers .top-left-customers,
+.customers .top-customers .top-right-customers{
+    height: 235px; /* fake content */
+    background-color: rgba(0,0,0,.2); /* fake content */
+}
+.customers .top-customers .top-left-customers{
+    width: 30%;
+    border-right: 1px solid black; /* fake content */
+}
+.customers .top-customers .top-right-customers{
+    width: 70%;
+}
+/* Bottom */
+.customers .bottom-customers .bottom-left-customers,
+.customers .bottom-customers .bottom-right-customers{
+    height: 440px; /* fake content */
+    background-color: rgba(0,0,0,.2); /* fake content */
+}
+.customers .bottom-customers .bottom-left-customers{
+    width: 520px;
+}
+.customers .bottom-customers .bottom-right-customers{
+    width: 365px;
 }
