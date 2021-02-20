@@ -145,6 +145,7 @@ section.softwares{
 }
 /* Heading Soft. Sect. */
 .softwares .heading-soft-sect{
+    margin-bottom: 60px;
     padding: 0 430px;
 }
 .softwares .heading-soft-sect img{
@@ -155,21 +156,43 @@ section.softwares{
 }
 /* Free Hubspot */
 .free-hubspot{
-    height: 375px; /* fake content */
     padding: 80px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0px 0px 4px rgba(0,0,0,.2);
 }
-.free-hubspot .left-free-hubspot,
-.free-hubspot .right-free-hubspot{
-    height: 210px; /* fake content */
-}
+/* Left */
 .free-hubspot .left-free-hubspot{
-    background-color: aqua; /* fake content */
-    width: 30%;
+    width: 25%;
 }
+.free-hubspot .left-free-hubspot img{
+    height: 110px;
+    margin-bottom: 20px;
+}
+/* Right */
 .free-hubspot .right-free-hubspot{
-    background-color:palevioletred; /* fake content */
-    width: 70%;
+    width: 75%;
+    padding: 0 50px;
+}
+.free-hubspot .right-free-hubspot h3{
+    position: relative;
+}
+.free-hubspot .right-free-hubspot h3 span{
+    position: relative;
+    background-color: #fff;
+    padding-right: 60px;
+}
+.free-hubspot .right-free-hubspot h3::before{
+    content: '';
+    display: inline-block;
+    width:100%;
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform: translateY(-50%);
+    border: 1px solid #899397
+}
+.free-hubspot .right-free-hubspot li > i{
+    padding-right: 10px;
+    color: #ff7a59;
 }
