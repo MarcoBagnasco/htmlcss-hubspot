@@ -44,16 +44,22 @@ p{
     text-align: center;
 }
 /* List */
-.menu-inline li{
-    display: inline-block;
-    margin-right: 20px;
+li{
     list-style: none;
-}
-.menu-inline li:last-child{
-    margin-right: 0;
 }
 .cursor li{
     cursor: pointer;
+}
+li > i{
+    padding-right: 10px;
+    color: #ff7a59;
+}
+.menu-inline li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu-inline li:last-child{
+    margin-right: 0;
 }
 /* Buttons */
 .btn{
@@ -143,7 +149,7 @@ section.hero{
 
 /* SOFTWARES SECT. */
 section.softwares{
-    padding: 50px;
+    padding: 60px;
     background-color: #f4f9fd;
 }
 /* Heading Soft. Sect. */
@@ -193,25 +199,30 @@ section.softwares{
     left: 0;
     top:50%;
     transform: translateY(-50%);
-    border: 1px solid #899397
-}
-.free-hubspot .right-free-hubspot li > i{
-    padding-right: 10px;
-    color: #ff7a59;
+    border: 1px solid #899397;
 }
 
 /* Products */
-.products-box{
-    height: 725px; /* fake content */
-    background-color: aqua; /* fake content */
-}
 .products-box .product{
-    height: 100%; /* fake content */
     width: 30%;
+    padding: 20px 35px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0px 0px 4px rgba(0,0,0,.2);
 }
 .products-box .product:nth-child(2){
     margin: 0 5%;
+}
+.products-box .product img{
+    height: 110px;
+    margin-bottom: 20px;
+}
+.products-box .product hr{
+    margin-bottom: 40px;
+    padding-top: 15px;
+    border: transparent;
+    border-bottom: 2px solid #899397;
+}
+.products-box .product ul{
+    text-align: left;
 }
