@@ -30,6 +30,9 @@ p{
 .float-right{
     float: right;
 }
+.w-quarter{
+    width: 25%;
+}
 .mb-30{
     margin-bottom: 30px;
 }
@@ -39,16 +42,16 @@ p{
 .mb-60{
     margin-bottom: 60px;
 }
-.icon{
-    height: 110px;
-    margin-bottom: 20px;
-}
 /* Text */
 .small-text{
     font-size: 12px;
 }
 .align-center{
     text-align: center;
+}
+.icon{
+    height: 110px;
+    margin-bottom: 20px;
 }
 /* List */
 li{
@@ -57,7 +60,7 @@ li{
 .cursor li{
     cursor: pointer;
 }
-li > i{
+li > i.fa-check-circle{
     padding-right: 10px;
     color: #ff7a59;
 }
@@ -235,7 +238,6 @@ section.community{
 
 /* Numbers */
 .community .numbers-box .numbers{
-    width: 25%;
     padding: 20px 0 25px;
     border-right: 1px solid white;
 }
@@ -269,7 +271,7 @@ section.community{
 
 /* CUSTOMERS */
 section.customers{
-    padding: 60px;
+    padding: 60px 60px 20px;
 }
 /* Top Left*/
 .customers .top-customers .top-left-customers{
@@ -299,16 +301,49 @@ section.customers{
 }
 /* Bottom */
 .customers .bottom-customers .bottom-left-customers{
-    width: 520px;
+    width: 40%;
 }
 .customers .bottom-customers .bottom-left-customers h2{
     font-size: 32px;
-}
-.customers .bottom-customers .bottom-right-customers{
-    width: 365px;
 }
 .customers .bottom-customers .bottom-right-customers img{
     height: 400px;
     position: relative;
     bottom: 35px;
+}
+
+/* FOOTER */
+footer.main-footer{
+    height: 680px; /* fake content */
+    padding: 50px;
+    color: #c4cfdb;
+    background-color: #2d3e50;
+}
+.main-footer .container{
+    height: 100%; /* fake content */
+    background-color: rgba(255,255,255,.5); /* fake content */
+}
+/* Menu */
+.main-footer .menu-box{
+    margin-bottom: 80px;
+}
+.main-footer .menu-box .menu{
+    height: 350px; /* fake content */
+    background-color: rgba(0,0,0,.2); /* fake content */
+    border: 1px solid white; /* fake content */
+}
+/* Languages */
+.main-footer .languages{
+    background-color: rgba(0,0,0,.2); /* fake content */
+    line-height: 60px;
+    border-bottom: 1px solid #c4cfdb;
+}
+/* Bottom */
+.main-footer .bottom-footer .left-bottom-footer,
+.main-footer .bottom-footer .right-bottom-footer{
+    height: 60px; /* fake content */
+    background-color: rgba(0,0,0,.2); /* fake content */
+}
+.main-footer .bottom-footer .right-bottom-footer{
+    text-align: right;
 }
