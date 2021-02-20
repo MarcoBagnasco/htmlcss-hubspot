@@ -33,6 +33,9 @@ p{
 .mb-30{
     margin-bottom: 30px;
 }
+.mb-40{
+    margin-bottom: 40px;
+}
 .mb-60{
     margin-bottom: 60px;
 }
@@ -210,7 +213,6 @@ section.softwares{
     margin: 0 5%;
 }
 .products-box .product hr{
-    margin-bottom: 40px;
     padding-top: 15px;
     border: transparent;
     border-bottom: 2px solid #899397;
@@ -257,12 +259,8 @@ section.community{
     font-size: 32px;
     font-weight: 400;
 }
-.numbers-box .numbers .caption{
-    font-size: 12px;
-}
 /* Bottom Box */
 .community .numbers-box.bottom-numbers-box{
-    margin-bottom: 40px;
     border-top: 1px solid white;
 }
 .community .numbers-box.bottom-numbers-box .numbers:last-child img{
@@ -273,31 +271,44 @@ section.community{
 section.customers{
     padding: 60px;
 }
-section.customers .container{
-    background-color: aqua; /* fake content */
-}
-/* Top */
-.customers .top-customers .top-left-customers,
-.customers .top-customers .top-right-customers{
-    height: 235px; /* fake content */
-    background-color: rgba(0,0,0,.2); /* fake content */
-}
+/* Top Left*/
 .customers .top-customers .top-left-customers{
     width: 30%;
-    border-right: 1px solid black; /* fake content */
+    padding: 20px 90px;
 }
+.customers .top-customers .top-left-customers span.number{
+    display: inline-block;
+    font-size: 52px;
+}
+.customers .top-customers .top-left-customers span{
+    font-weight: 700;
+}
+/* Top Right */
 .customers .top-customers .top-right-customers{
-    width: 70%;
+    width: 65%;
+    padding: 0 70px;
+}
+.customers .top-customers .top-right-customers img{
+    max-width: 140px;
+    /* max-height: 40px; */
+    margin:0 20px 30px 0;
+    vertical-align: middle;
+}
+.customers .top-customers .top-right-customers img:last-child{
+    margin-right: 0;
 }
 /* Bottom */
-.customers .bottom-customers .bottom-left-customers,
-.customers .bottom-customers .bottom-right-customers{
-    height: 440px; /* fake content */
-    background-color: rgba(0,0,0,.2); /* fake content */
-}
 .customers .bottom-customers .bottom-left-customers{
     width: 520px;
 }
+.customers .bottom-customers .bottom-left-customers h2{
+    font-size: 32px;
+}
 .customers .bottom-customers .bottom-right-customers{
     width: 365px;
+}
+.customers .bottom-customers .bottom-right-customers img{
+    height: 400px;
+    position: relative;
+    bottom: 35px;
 }
