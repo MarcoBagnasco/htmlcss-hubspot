@@ -36,6 +36,10 @@ p{
 .mb-60{
     margin-bottom: 60px;
 }
+.icon{
+    height: 110px;
+    margin-bottom: 20px;
+}
 /* Text */
 .small-text{
     font-size: 12px;
@@ -174,10 +178,6 @@ section.softwares{
 .free-hubspot .left-free-hubspot{
     width: 25%;
 }
-.free-hubspot .left-free-hubspot img{
-    height: 110px;
-    margin-bottom: 20px;
-}
 /* Right */
 .free-hubspot .right-free-hubspot{
     width: 75%;
@@ -213,10 +213,6 @@ section.softwares{
 .products-box .product:nth-child(2){
     margin: 0 5%;
 }
-.products-box .product img{
-    height: 110px;
-    margin-bottom: 20px;
-}
 .products-box .product hr{
     margin-bottom: 40px;
     padding-top: 15px;
@@ -228,27 +224,52 @@ section.softwares{
 }
 
 /* COMMUNITY */
-/* Heading Community */
 section.community{
-    height: 765px; /* fake content */
+    /* height: 765px; fake content */
     padding: 60px;
     color:white;
     background-image: linear-gradient(to right,#00a8ba,#00b9aa);
 }
-.community .heading-community{
-    height: 170px; /* fake content */
-    background-color: rgba(0,0,0,.2);
+/* Heading Community */
+.community .heading-community h2{
+    padding: 0 40px;
+    font-size: 32px;
 }
-/* Numbers Box */
-.community .numbers-box:last-child{
-    border-top: 1px solid white;
-}
+
+/* Numbers */
 .community .numbers-box .numbers{
-    background-color: rgba(0,0,0,.2); /* fake content */
-    height: 185px; /* fake content */
     width: 25%;
+    padding: 20px 0 25px;
     border-right: 1px solid white;
 }
 .community .numbers-box .numbers:last-child{
     border-right: none;
+}
+.numbers-box .numbers img{
+    height: 35px;
+    margin-bottom: 15px;
+}
+.numbers-box .numbers .amount{
+    margin-bottom: 20px;
+    font-size: 42px;
+    font-weight: 700;
+}
+.numbers-box .numbers .amount::after{
+    content: '+';
+    position: relative;
+    left: 5px;
+    bottom: 3px;
+    font-size: 32px;
+    font-weight: 400;
+}
+.numbers-box .numbers .caption{
+    font-size: 12px;
+}
+/* Bottom Box */
+.community .numbers-box.bottom-numbers-box{
+    margin-bottom: 40px;
+    border-top: 1px solid white;
+}
+.community .numbers-box.bottom-numbers-box .numbers:last-child img{
+    height: 25px;
 }
