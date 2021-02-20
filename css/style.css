@@ -226,3 +226,29 @@ section.softwares{
 .products-box .product ul{
     text-align: left;
 }
+
+/* COMMUNITY */
+/* Heading Community */
+section.community{
+    height: 765px; /* fake content */
+    padding: 60px;
+    color:white;
+    background-image: linear-gradient(to right,#00a8ba,#00b9aa);
+}
+.community .heading-community{
+    height: 170px; /* fake content */
+    background-color: rgba(0,0,0,.2);
+}
+/* Numbers Box */
+.community .numbers-box:last-child{
+    border-top: 1px solid white;
+}
+.community .numbers-box .numbers{
+    background-color: rgba(0,0,0,.2); /* fake content */
+    height: 185px; /* fake content */
+    width: 25%;
+    border-right: 1px solid white;
+}
+.community .numbers-box .numbers:last-child{
+    border-right: none;
+}
