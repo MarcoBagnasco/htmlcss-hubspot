@@ -10,6 +10,9 @@ body{
     font-weight: 500;
     color: #33475b;
 }
+h2{
+    font-size: 32px;
+}
 p{
     line-height: 30px;
 }
@@ -49,7 +52,7 @@ p{
 .align-center{
     text-align: center;
 }
-.icon{
+.illustration{
     height: 110px;
     margin-bottom: 20px;
 }
@@ -90,7 +93,18 @@ li > i.fa-check-circle{
 .btn.btn-big{
     padding: 20px 40px;
 }
-
+.btn.get-free::after{
+    content: 'GetHuspotFree';
+}
+.btn.learn::after{
+    content: 'Learn More';
+}
+.btn:not(.btn-transparent):hover{
+    opacity:.5;
+}
+.btn.btn-transparent:hover{
+    background-color: rgba(255,122,89,.1);
+}
 /* HEADER */
 .main-header .top-header,
 .main-header .bottom-header{
@@ -99,6 +113,10 @@ li > i.fa-check-circle{
 .main-header .top-header{
     background-color: #f4f9fd;
     border-bottom: 1px solid black;
+}
+header li:hover{
+    text-decoration: underline;
+    color: #007a8c;
 }
 /* Top Left */
 .top-header .left-top-header li:first-child{
@@ -118,9 +136,6 @@ li > i.fa-check-circle{
     vertical-align: middle;
 }
 /* Bottom Rigth */
-.bottom-header .right-bottom-header{
-    font-weight: 600;
-}
 .bottom-header .right-bottom-header li span{
     padding-left: 10px;
 }
@@ -158,6 +173,12 @@ section.softwares{
     padding: 60px;
     background-color: #f4f9fd;
 }
+section.softwares h3{
+    text-transform: uppercase;
+}
+section.softwares div:not(.heading-soft-sect) h2{
+    font-size: 24px;
+}
 /* Heading Soft. Sect. */
 .softwares .heading-soft-sect{
     padding: 0 430px;
@@ -165,35 +186,34 @@ section.softwares{
 .softwares .heading-soft-sect img{
     height: 210px;
 }
-.softwares .heading-soft-sect h2{
-    font-size: 32px;
-}
 
 /* Free Hubspot */
-.free-hubspot{
-    padding: 80px;
+.product{
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0px 0px 4px rgba(0,0,0,.2);
 }
+.product.free-hubspot{
+    padding: 80px;
+}
 /* Left */
-.free-hubspot .left-free-hubspot{
+.product.free-hubspot .left-free-hubspot{
     width: 25%;
 }
 /* Right */
-.free-hubspot .right-free-hubspot{
+.product.free-hubspot .right-free-hubspot{
     width: 75%;
     padding: 0 50px;
 }
-.free-hubspot .right-free-hubspot h3{
+.product.free-hubspot .right-free-hubspot h3{
     position: relative;
 }
-.free-hubspot .right-free-hubspot h3 span{
+.product.free-hubspot .right-free-hubspot h3 span{
     position: relative;
     background-color: #fff;
     padding-right: 60px;
 }
-.free-hubspot .right-free-hubspot h3::before{
+.product.free-hubspot .right-free-hubspot h3::before{
     content: '';
     display: inline-block;
     width:100%;
@@ -205,22 +225,19 @@ section.softwares{
 }
 
 /* Products */
-.products-box .product{
+.products-box .product.premium{
     width: 30%;
     padding: 20px 35px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 4px rgba(0,0,0,.2);
 }
-.products-box .product:nth-child(2){
+.products-box .product.premium:nth-child(2){
     margin: 0 5%;
 }
-.products-box .product hr{
+.products-box .product.premium hr{
     padding-top: 15px;
     border: transparent;
     border-bottom: 2px solid #899397;
 }
-.products-box .product ul{
+.products-box .product.premium ul{
     text-align: left;
 }
 
@@ -233,7 +250,6 @@ section.community{
 /* Heading Community */
 .community .heading-community h2{
     padding: 0 40px;
-    font-size: 32px;
 }
 
 /* Numbers */
@@ -245,7 +261,7 @@ section.community{
     border-right: none;
 }
 .numbers-box .numbers img{
-    height: 35px;
+    max-height: 35px;
     margin-bottom: 15px;
 }
 .numbers-box .numbers .amount{
@@ -259,7 +275,7 @@ section.community{
     left: 5px;
     bottom: 3px;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 500;
 }
 /* Bottom Box */
 .community .numbers-box.bottom-numbers-box{
@@ -303,9 +319,6 @@ section.customers{
 .customers .bottom-customers .bottom-left-customers{
     width: 40%;
 }
-.customers .bottom-customers .bottom-left-customers h2{
-    font-size: 32px;
-}
 .customers .bottom-customers .bottom-right-customers img{
     height: 400px;
     position: relative;
@@ -317,6 +330,13 @@ footer.main-footer{
     padding: 50px;
     color: #c4cfdb;
     background-color: #2d3e50;
+}
+footer li:hover{
+    color: #7fd1de;
+    text-decoration: underline;
+}
+footer a > i:hover{
+    color: #7fd1de;
 }
 /* Menu */
 .main-footer .menu-box{
