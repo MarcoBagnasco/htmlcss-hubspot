@@ -151,6 +151,11 @@ li > i.fa-check-circle{
     border-radius: 50%;
     background-color: #425b76;
 }
+.chat-box .chat-icon i.fa-times{
+    /* display: none; */
+    line-height: 60px;
+}
+
 /* Chat Text */
 .chat-box .chat-text{
     display: none;
@@ -298,12 +303,21 @@ li > i.fa-check-circle{
 .chat-box .chat-icon:hover{
     box-shadow: 0 0 20px rgba(0,0,0,.3);
 }
-.chat-box .chat-icon:hover .chat-text{
+.chat-box .chat-icon:hover i.fa-times,
+.chat-box .chat-icon:hover .chat-text,
+.chat-box .chat-text:hover .chat-window{
+    display: block;
+}
+.chat-box .chat-icon:hover i.fa-comments{
+    display: none;
+}
+
+/* .chat-box .chat-icon:hover .chat-text{
     display: block;
 }
 .chat-box .chat-text:hover .chat-window{
     display: block;
-}
+} */
 
 /* HEADER */
 .main-header .top-header,
