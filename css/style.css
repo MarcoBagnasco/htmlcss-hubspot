@@ -104,6 +104,16 @@ li > i.fa-check-circle{
 .btn.learn::after{
     content: 'Learn More';
 }
+.btn-chat{
+    display: inline-block;
+    margin: 4px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #33475b;
+    border-radius: 3px;
+}
 /* Buttons Interaction */
 .btn:not(.btn-transparent):hover{
     opacity:.5;
@@ -122,12 +132,12 @@ li > i.fa-check-circle{
 
 /* CHAT */
 .chat-box{
-    width: 240px;
     position: fixed;
     right:15px;
     bottom: 15px;
     z-index: 10;
 }
+/* Chat Icon */
 .chat-box .chat-icon{
     position: absolute;
     bottom: 0;
@@ -141,11 +151,16 @@ li > i.fa-check-circle{
     border-radius: 50%;
     background-color: #425b76;
 }
+/* Chat Text */
 .chat-box .chat-text{
     display: none;
-    position: relative;
-    margin-bottom: 80px;
+    position: absolute;
+    right: 0;
+    bottom: 80px;
     padding: 28px 16px 15px;
+    width: 240px;
+    color: #33475b;
+    text-align: left;
     line-height: 2;
     background-color: #fff;
     border-radius: 5px;
@@ -160,19 +175,133 @@ li > i.fa-check-circle{
     font-weight: bold;
     color:#7c98b6;
 }
-.chat-box .chat-text img{
+.chat-box .chat-text > img{
     position: absolute;
     bottom: 100%;
     left: 50%;
     transform: translate(-50%, 50%);
     width: 48px;
-    height: 48px;
+}
+.chat-box .chat-text::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top:100%;
+    right: 0;
+    width: 100%;
+    height: 30px;
+}
+/* Chat Window */
+.chat-box .chat-window{
+    width: 380px;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #f2f5f8;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+/* Chat Window Top */
+.chat-box .chat-window .chat-window-top{
+    position: relative;
+    height: 70px;background-color: #425b76;
+    line-height: 70px;
+    padding-left: 14px;
+    font-size: 16px;
+    color: #fff;
+}
+.chat-box .chat-window .chat-window-top::before{
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-color: #00bda5;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.chat-box .chat-window .chat-window-top > img{
+    height: 38px;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+/* Chat Window Dialogue */
+.chat-box .chat-window .dialogue-box{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    margin-bottom: 5px;
+    padding: 30px 20px 40px 60px;
+    line-height: 12px;
+    background-color: #fff;
+    overflow-y:auto;
+}
+.chat-box .chat-window .dialogue-box > img{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    height: 32px;
+}
+.chat-box .chat-window .dialogue-box .dialogue{
+    margin-bottom: 10px;
+    padding: 10px;
+    line-height: 2;
+    background-color: #eaf0f6;
+    border-radius: 0 10px 10px 10px;
+}
+/* Chat Window Information */
+.chat-box .chat-window .chat-information{
+    margin-bottom: 3px;
+    padding: 30px 30px;
+    font-size: 10px;
+    color: #7c98b6;
+    line-height: 1.5;
+    background-color: #fff;
+}
+/* Chat Window Bottom */
+.chat-box .chat-window .chat-window-bottom{
+    width: 100%;
+    background-color: #fff;
+}
+.chat-box .chat-window .chat-window-bottom .chat-options{
+    width: 86%;
+    margin: 0 2%;
+    padding: 8px;
+    font-size: 16px;
+    color: #b0c1d4;
+    background-color: #eaf0f6;
+    border-radius: 3px;
+}
+.chat-box .chat-window .chat-window-bottom .paper-plane{
+    width: 8%;
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
+    color: #b0c1d4;
+}
+.chat-box .chat-window .chat-window-bottom .chat-add{
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    color: #7c98b6;
+}
+.chat-box .chat-window .chat-window-bottom .chat-add i,
+.chat-box .chat-window .chat-window-bottom .chat-add span{
+    color: #ff7a59;
 }
 /* Chat Interations */
 .chat-box .chat-icon:hover{
     box-shadow: 0 0 20px rgba(0,0,0,.3);
 }
-.chat-box .chat-icon:hover + .chat-text{
+.chat-box .chat-icon:hover .chat-text{
+    display: block;
+}
+.chat-box .chat-text:hover .chat-window{
     display: block;
 }
 
