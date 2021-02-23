@@ -63,7 +63,8 @@ p{
 li{
     list-style: none;
 }
-.cursor li{
+.cursor li,
+.cursor.chat-icon{
     cursor: pointer;
 }
 li > i.fa-check-circle{
@@ -117,6 +118,62 @@ li > i.fa-check-circle{
 }
 .btn.btn-transparent:active{
     background-color: rgba(255,122,89,.5);
+}
+
+/* CHAT */
+.chat-box{
+    width: 240px;
+    position: fixed;
+    right:15px;
+    bottom: 15px;
+    z-index: 10;
+}
+.chat-box .chat-icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #425b76;
+}
+.chat-box .chat-text{
+    display: none;
+    position: relative;
+    margin-bottom: 80px;
+    padding: 28px 16px 15px;
+    line-height: 2;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+}
+.chat-box .chat-text::before{
+    content: '\2715';
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#7c98b6;
+}
+.chat-box .chat-text img{
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 48px;
+    height: 48px;
+}
+/* Chat Interations */
+.chat-box .chat-icon:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+}
+.chat-box .chat-icon:hover + .chat-text{
+    display: block;
 }
 
 /* HEADER */
