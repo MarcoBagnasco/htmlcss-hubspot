@@ -376,11 +376,14 @@ header li:hover{
 }
 
 .bottom-header .right-bottom-header li#software:hover,
-.bottom-header .right-bottom-header li#resources:hover{
+.bottom-header .right-bottom-header li#resources:hover,
+.bottom-header .right-bottom-header li#about:hover{
+
     border-bottom: 4px solid #33475b;
 }
 .bottom-header .right-bottom-header li#software:hover .dropdown,
-.bottom-header .right-bottom-header li#resources:hover .dropdown{
+.bottom-header .right-bottom-header li#resources:hover .dropdown,
+.bottom-header .right-bottom-header li#about:hover .dropdown{
     display: block;
 }
 
@@ -510,6 +513,19 @@ li#resources .dropdown .resources-icon{
     color: #7b98b6;
     background-color: #f5f8fa;
 }
+
+/* About Menu */
+li#about .dropdown{
+    top: 100%;
+    right: 0;
+    padding: 20px;
+    line-height: 2;
+    background-color: #fff;
+}
+li#about .dropdown li{
+    display: block;
+}
+
 /* MAIN */
 /* HERO */
 section.hero{
