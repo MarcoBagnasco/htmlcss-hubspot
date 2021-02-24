@@ -312,13 +312,6 @@ li > i.fa-check-circle{
     display: none;
 }
 
-/* .chat-box .chat-icon:hover .chat-text{
-    display: block;
-}
-.chat-box .chat-text:hover .chat-window{
-    display: block;
-} */
-
 /* HEADER */
 .main-header .top-header,
 .main-header .bottom-header{
@@ -378,7 +371,16 @@ header li:hover{
 .bottom-header .right-bottom-header li span{
     padding-left: 10px;
 }
-.bottom-header .right-bottom-header li#software:hover .dropdown{
+.bottom-header .right-bottom-header li{
+    border-bottom: 4px solid transparent;
+}
+
+.bottom-header .right-bottom-header li#software:hover,
+.bottom-header .right-bottom-header li#resources:hover{
+    border-bottom: 4px solid #33475b;
+}
+.bottom-header .right-bottom-header li#software:hover .dropdown,
+.bottom-header .right-bottom-header li#resources:hover .dropdown{
     display: block;
 }
 
@@ -386,18 +388,20 @@ header li:hover{
 .bottom-header .menu-inline .dropdown{
     display: none;
     position: absolute;
-    left: 0;
-    top: 100%;
-    line-height: 1.5;
     font-size: 14px;
     color: #33475b;
-    background-color: #f5f8fa;
     border-radius: 3px;
     box-shadow: 0 0 1px rgba(0,0,0,.7);
     z-index: 1;
     cursor:default;
 }
 /* Software Menu */
+li#software .dropdown{
+    left: 0;
+    top: 100%;
+    line-height: 1.5;
+    background-color: #f5f8fa;
+}
 li#software .dropdown a{
     text-decoration: none;
     font-weight: 600;
@@ -474,6 +478,38 @@ li#software .dropdown-software-right .drop-soft-bottom-right p{
     margin: 0 10px;
 }
 
+/* Resources Menu */
+li#resources .dropdown{
+    top:100%;
+    right: 0;
+    padding: 30px;
+    line-height: 2;
+    background-color: #fff;
+}
+li#resources .dropdown .resources-left,
+li#resources .dropdown .resources-right{
+    margin-left: 30px;
+    margin-right: 50px;
+}
+li#resources .dropdown li{
+    display: block;
+}
+li#resources .dropdown h4{
+    position: relative;
+}
+li#resources .dropdown .resources-icon{
+    position: absolute;
+    top: -5px;
+    left: -40px;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: #7b98b6;
+    background-color: #f5f8fa;
+}
 /* MAIN */
 /* HERO */
 section.hero{
